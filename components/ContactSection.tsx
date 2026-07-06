@@ -58,15 +58,13 @@ export default function ContactSection() {
         <div className="flex flex-col justify-center rounded-xl border border-line bg-surface/40 p-6">
           <p className="text-sm text-muted">Want the full details?</p>
           <a
-            href="#"
+            href="/Ferdinan-Nathanael-CV.pdf"
+            download
             className="mt-4 inline-flex items-center justify-center rounded-md bg-accent px-5 py-3 text-sm font-medium text-bg transition-opacity hover:opacity-90"
-            aria-label="Download CV (placeholder link)"
+            aria-label="Download Ferdinan Nathanael's CV (PDF)"
           >
             Download CV
           </a>
-          <p className="mt-3 text-xs text-faint">
-            Placeholder — link your CV file here.
-          </p>
         </div>
       </div>
     </Section>

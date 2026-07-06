@@ -54,7 +54,6 @@ export const PROJECTS: Project[] = [
       "Worked with database migrations, authentication flow, and feature planning for MVP development.",
       "Collaborated in a team-based workflow using GitHub issues, branching, and pull requests.",
     ],
-    github: "#",
     demo: "https://ptera.id/id/",
   },
   {
@@ -70,7 +69,6 @@ export const PROJECTS: Project[] = [
       "Structured backend logic to support data entry, retrieval, and management.",
       "Debugged routing and deployment issues during development.",
     ],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/FerdinanNathanael/webprog-athlete",
   },
 ];
