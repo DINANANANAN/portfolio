@@ -1,15 +1,42 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import type { BotApiResponse, BotState, ChatMessage } from "@/lib/bot/types";
+import { MENU_TEXT } from "@/lib/bot/flow";
+import { parseInline } from "@/lib/bot/format";
 
 const MAX_USER_MESSAGES = 20;
 
 const GREETING: ChatMessage = {
   role: "bot",
-  text:
-    "*PLN Icon Plus — Sales Assistant*\n\nType a number to choose:\n1. Search Prospects\n3. Ask About Products (AI)\n\n_This is an interactive demo with sample data._",
+  text: MENU_TEXT,
 };
+
+function renderMessageText(text: string) {
+  const lines = text.split("\n");
+  return lines.map((line, lineIndex) => (
+    <Fragment key={lineIndex}>
+      {lineIndex > 0 ? <br /> : null}
+      {parseInline(line).map((segment, segmentIndex) => {
+        if (segment.bold) {
+          return (
+            <strong key={segmentIndex} className="font-semibold">
+              {segment.text}
+            </strong>
+          );
+        }
+        if (segment.italic) {
+          return (
+            <em key={segmentIndex} className="italic">
+              {segment.text}
+            </em>
+          );
+        }
+        return <span key={segmentIndex}>{segment.text}</span>;
+      })}
+    </Fragment>
+  ));
+}
 
 export default function ChatWidget({ onClose }: { onClose?: () => void }) {
   const [messages, setMessages] = useState<ChatMessage[]>([GREETING]);
@@ -54,7 +81,7 @@ export default function ChatWidget({ onClose }: { onClose?: () => void }) {
   }
 
   return (
-    <div className="flex h-[32rem] w-full max-w-md flex-col overflow-hidden rounded-xl border border-line bg-surface shadow-xl">
+    <div className="flex h-[32rem] w-full max-w-md flex-col bg-surface">
       {/* Header */}
       <div className="flex items-center justify-between border-b border-line bg-elevated px-4 py-3">
         <div>
@@ -87,7 +114,7 @@ export default function ChatWidget({ onClose }: { onClose?: () => void }) {
                   : "border border-line bg-elevated text-ink")
               }
             >
-              {m.text}
+              {renderMessageText(m.text)}
             </div>
           </div>
         ))}

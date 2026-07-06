@@ -57,8 +57,8 @@ describe("handleMessage — search flow", () => {
 });
 
 describe("handleMessage — ask product flow", () => {
-  it("choosing 3 enters ask-product mode", () => {
-    const r = handleMessage("3", initialState());
+  it("choosing 2 enters ask-product mode", () => {
+    const r = handleMessage("2", initialState());
     expect(r.state.stage).toBe("ASK_PRODUCT");
     expect(r.reply?.toLowerCase()).toContain("product");
     expect(r.productQuestion).toBeUndefined();

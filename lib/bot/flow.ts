@@ -7,7 +7,7 @@ export const MENU_TEXT = [
   "",
   "Type a number to choose:",
   "1. Search Prospects",
-  "3. Ask About Products (AI)",
+  "2. Ask About Products (AI)",
   "",
   "_This is an interactive demo with sample data._",
 ].join("\n");
@@ -35,7 +35,7 @@ export function handleMessage(rawText: string, state: BotState): FlowResult {
             "*Search Prospects*\n\nStep 1: What *industry* are you looking for? (e.g. Hotel, Factory, Bank, Retail)",
         };
       }
-      if (lower === "3") {
+      if (lower === "2") {
         return {
           state: { stage: "ASK_PRODUCT" },
           reply:
