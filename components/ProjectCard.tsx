@@ -1,5 +1,6 @@
 import type { Project } from "@/data/projects";
 import Badge from "@/components/Badge";
+import DemoLauncher from "@/components/DemoLauncher";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
@@ -28,6 +29,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div className="mt-auto flex flex-wrap items-center gap-3 pt-6">
+        {project.interactiveDemo ? <DemoLauncher /> : null}
         {project.github ? (
           <a
             href={project.github}
