@@ -6,9 +6,11 @@ export interface InlineSegment {
 
 /**
  * Tokenizes a single line of WhatsApp-style markdown into plain/bold/italic
- * segments. Only handles non-nested `*bold*` and `_italic_` spans, which is
- * all the bot produces. Unmatched or rogue markers pass through as literal
- * text — this must never throw.
+ * segments. Only handles single-level, non-nested `*bold*` and `_italic_`
+ * spans — a marker inside another marker's span (e.g. `_(*x*)_`) is NOT
+ * parsed as nested formatting, so bot copy must avoid nesting markers.
+ * Unmatched or rogue markers pass through as literal text — this must never
+ * throw.
  */
 export function parseInline(text: string): InlineSegment[] {
   const segments: InlineSegment[] = [];

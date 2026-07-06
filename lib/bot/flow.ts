@@ -39,7 +39,7 @@ export function handleMessage(rawText: string, state: BotState): FlowResult {
         return {
           state: { stage: "ASK_PRODUCT" },
           reply:
-            "*Ask About Products*\n\nAsk me anything about PLN Icon Plus products (e.g. \"What is IConnet?\").\n\n_(Type *menu* to go back)_",
+            "*Ask About Products*\n\nAsk me anything about PLN Icon Plus products (e.g. \"What is IConnet?\").\n\n_(Type menu to go back)_",
         };
       }
       return { state: { stage: "START" }, reply: MENU_TEXT };

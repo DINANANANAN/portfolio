@@ -21,7 +21,7 @@ export async function POST(req: Request): Promise<Response> {
   let reply: string;
   if (result.productQuestion) {
     const answer = await askProduct(result.productQuestion);
-    reply = `*Icon Plus Assistant:*\n${answer}\n\n_(Type *menu* to go back)_`;
+    reply = `*Icon Plus Assistant:*\n${answer}\n\n_(Type menu to go back)_`;
   } else {
     reply = result.reply ?? MENU_TEXT;
   }

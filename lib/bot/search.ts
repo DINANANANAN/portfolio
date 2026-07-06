@@ -45,6 +45,6 @@ export function formatResults(
   }
 
   lines.push("");
-  lines.push("_(Type *menu* to start over)_");
+  lines.push("_(Type menu to start over)_");
   return lines.join("\n");
 }
