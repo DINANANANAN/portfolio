@@ -6,6 +6,7 @@ export type Project = {
   highlights: string[];
   github?: string;
   demo?: string;
+  note?: string;
 };
 
 export const PROJECTS: Project[] = [
@@ -31,8 +32,7 @@ export const PROJECTS: Project[] = [
       "Integrated a knowledge bank using ChromaDB, PDF processing, embeddings, and AI-generated responses to answer product-related questions with reduced hallucination.",
       "Designed backend endpoints for receiving, processing, and responding to WhatsApp messages through Botika webhook integration.",
     ],
-    github: "#",
-    demo: "#",
+    note: "Internal — guarded by NDA",
   },
   {
     slug: "billiard-super-app",
@@ -55,7 +55,7 @@ export const PROJECTS: Project[] = [
       "Collaborated in a team-based workflow using GitHub issues, branching, and pull requests.",
     ],
     github: "#",
-    demo: "#",
+    demo: "https://ptera.id/id/",
   },
   {
     slug: "athlete-tracking",

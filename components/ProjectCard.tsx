@@ -27,7 +27,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         ))}
       </div>
 
-      <div className="mt-auto flex gap-3 pt-6">
+      <div className="mt-auto flex flex-wrap items-center gap-3 pt-6">
         {project.github ? (
           <a
             href={project.github}
@@ -45,6 +45,11 @@ export default function ProjectCard({ project }: { project: Project }) {
           >
             Demo &rarr;
           </a>
+        ) : null}
+        {project.note ? (
+          <span className="inline-flex items-center gap-2 rounded-md border border-line px-4 py-2 font-mono text-xs text-faint">
+            {project.note}
+          </span>
         ) : null}
       </div>
     </article>
