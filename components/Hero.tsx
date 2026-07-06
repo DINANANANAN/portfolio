@@ -51,6 +51,7 @@ export default function Hero() {
   const decodeComplete = animating && done && display.text === LAST_PHRASE;
   const overlayInteractive = animating && !decodeComplete;
   const morphing = decodeComplete && !morphDone;
+  const introTextVisible = overlayInteractive || morphing; // only while decoding or flying
   const contentVisible = !animating || decodeComplete; // reveal hero behind the flying name
   const headingVisible = !animating || morphDone; // real <h1> only after handoff
 
@@ -188,7 +189,7 @@ export default function Hero() {
               dir={display.dir}
               onTransitionEnd={onIntroTransitionEnd}
               className={`px-6 font-mono text-3xl text-ink sm:text-5xl md:text-6xl ${
-                morphDone ? "opacity-0" : "opacity-100"
+                introTextVisible ? "opacity-100" : "opacity-0"
               }`}
               style={{
                 transform: morphTransform ?? "none",

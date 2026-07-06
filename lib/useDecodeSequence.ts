@@ -42,8 +42,8 @@ export function useDecodeSequence({ phrases, enabled }: Options): {
     let phraseStart = 0;
     let lastPaint = 0;
 
-    const HOLD_SHORT = 260;
-    const HOLD_LONG = 700;
+    const HOLD_SHORT = 90;
+    const HOLD_LONG = 420;
 
     const step = (now: number) => {
       if (cancelled) return;
@@ -55,7 +55,7 @@ export function useDecodeSequence({ phrases, enabled }: Options): {
       const phrase = phrases[phraseIndex];
       const chars = Array.from(phrase.text);
       const len = Math.max(chars.length, 1);
-      const duration = Math.min(950, 340 + len * 55);
+      const duration = Math.min(520, 220 + len * 32);
       const elapsed = now - phraseStart;
       const progress = Math.min(1, elapsed / duration);
       const isLast = phraseIndex === phrases.length - 1;
