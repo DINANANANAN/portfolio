@@ -7,6 +7,7 @@ export type Project = {
   github?: string;
   demo?: string;
   note?: string;
+  interactiveDemo?: boolean;
 };
 
 export const PROJECTS: Project[] = [
@@ -33,6 +34,7 @@ export const PROJECTS: Project[] = [
       "Designed backend endpoints for receiving, processing, and responding to WhatsApp messages through Botika webhook integration.",
     ],
     note: "Internal — guarded by NDA",
+    interactiveDemo: true,
   },
   {
     slug: "billiard-super-app",
