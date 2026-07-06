@@ -22,7 +22,7 @@ export default function WorkflowDiagram() {
         How it works
       </p>
       <p className="mt-1 text-xs text-faint">
-        The same architecture as the production WhatsApp bot — only the channel,
+        The same architecture as the production WhatsApp bot, only the channel,
         model, and data are swapped for this demo.
       </p>
 

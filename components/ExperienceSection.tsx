@@ -5,14 +5,14 @@ const TIMELINE = [
   {
     role: "Software Developer Intern",
     org: "PLN ICON PLUS",
-    period: "2026 — Present",
+    period: "2026 - Present",
     detail:
-      "Focused on chatbot development and database maintenance — building automation and AI-assisted internal tools.",
+      "Focused on chatbot development and database maintenance, building automation and AI-assisted internal tools.",
   },
   {
     role: "Computer Science Undergraduate",
     org: "Binus University",
-    period: "2023 — Present",
+    period: "2023 - Present",
     detail:
       "Software development coursework spanning backend systems, databases, web programming, and software design.",
   },

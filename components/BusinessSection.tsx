@@ -31,7 +31,7 @@ export default function BusinessSection() {
       id="business"
       index="06"
       title="Product & Business"
-      eyebrow="Beyond code, I think about products and business — how software connects to real value."
+      eyebrow="Beyond code, I think about products and business: how software connects to real value."
     >
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {ITEMS.map((it) => (

@@ -134,7 +134,7 @@ export default function Hero() {
           Ferdinan Nathanael
         </h1>
         <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-muted sm:text-base">
-          I build web, mobile, backend, and automation systems &mdash; focused on
+          I build web, mobile, backend, and automation systems, focused on
           clean structure, reliable logic, and real-world impact.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

@@ -8,7 +8,7 @@ export default function ProjectsSection() {
       id="projects"
       index="03"
       title="Featured Projects"
-      eyebrow="A selection of systems I've designed and built — from sales automation to mobile platforms and database-driven web apps."
+      eyebrow="A selection of systems I've designed and built, from sales automation to mobile platforms and database-driven web apps."
     >
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => (

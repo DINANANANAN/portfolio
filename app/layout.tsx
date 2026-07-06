@@ -5,9 +5,9 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Ferdinan Nathanael — Full-Stack Developer",
+  title: "Ferdinan Nathanael | Full-Stack Developer",
   description:
-    "Ferdinan Nathanael — software developer building web, mobile, backend, and automation systems. Projects, case studies, skills, and contact.",
+    "Ferdinan Nathanael, software developer building web, mobile, backend, and automation systems. Projects, case studies, skills, and contact.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

@@ -51,7 +51,7 @@ export default function CaseStudySection() {
     <Section
       id="case-study"
       index="04"
-      title="Case Study — WhatsApp Sales Automation Bot"
+      title="Case Study: WhatsApp Sales Automation Bot"
       eyebrow="A closer look at how the automation system was designed and built."
     >
       <div className="grid gap-10 lg:grid-cols-3">

@@ -13,7 +13,7 @@ export default function AboutSection() {
         <p className="text-base leading-relaxed text-muted md:col-span-2">
           I&apos;m a software developer with experience building web, mobile, and
           backend systems. I enjoy creating practical applications that solve real
-          problems &mdash; from sales automation tools and database-driven web apps
+          problems, from sales automation tools and database-driven web apps
           to mobile platforms and AI-assisted systems. I focus on clean structure,
           reliable backend logic, and user-friendly product experiences.
         </p>
