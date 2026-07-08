@@ -6,7 +6,6 @@ export default function ProjectsSection() {
   return (
     <Section
       id="projects"
-      index="03"
       title="Featured Projects"
       eyebrow="A selection of systems I've designed and built, from sales automation to mobile platforms and database-driven web apps."
     >

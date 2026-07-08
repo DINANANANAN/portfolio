@@ -31,7 +31,7 @@ const COURSEWORK = [
 
 export default function ExperienceSection() {
   return (
-    <Section id="experience" index="05" title="Experience & Education">
+    <Section id="experience" title="Experience & Education">
       <div className="grid gap-12 md:grid-cols-3">
         <div className="space-y-8 md:col-span-2">
           {TIMELINE.map((item) => (

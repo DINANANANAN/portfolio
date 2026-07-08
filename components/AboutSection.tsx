@@ -8,7 +8,7 @@ const FACTS: [string, string][] = [
 
 export default function AboutSection() {
   return (
-    <Section id="about" index="01" title="About Me">
+    <Section id="about" title="About Me">
       <div className="grid gap-10 md:grid-cols-3">
         <p className="text-base leading-relaxed text-muted md:col-span-2">
           I&apos;m a software developer with experience building web, mobile, and

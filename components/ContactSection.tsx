@@ -24,7 +24,6 @@ export default function ContactSection() {
   return (
     <Section
       id="contact"
-      index="07"
       title="Get in Touch"
       eyebrow="Open to opportunities and collaboration. Feel free to reach out."
     >

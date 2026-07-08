@@ -6,7 +6,6 @@ export default function SkillsSection() {
   return (
     <Section
       id="skills"
-      index="02"
       title="Skills"
       eyebrow="Tools and technologies I work with across the stack."
     >

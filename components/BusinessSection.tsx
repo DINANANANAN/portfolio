@@ -29,7 +29,6 @@ export default function BusinessSection() {
   return (
     <Section
       id="business"
-      index="06"
       title="Product & Business"
       eyebrow="Beyond code, I think about products and business: how software connects to real value."
     >
