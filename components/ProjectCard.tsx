@@ -30,13 +30,15 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       <div className="mt-auto flex flex-wrap items-center gap-3 pt-6">
         {project.interactiveDemo ? <DemoLauncher /> : null}
-        {project.github ? (
+        {project.website ? (
           <a
-            href={project.github}
+            href={project.website}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-md border border-line px-4 py-2 text-sm text-ink transition-colors hover:border-accent hover:text-accent"
-            aria-label={`View source for ${project.title} on GitHub`}
+            aria-label={`Visit the live website for ${project.title}`}
           >
-            GitHub
+            Website
           </a>
         ) : null}
         {project.demo ? (

@@ -4,7 +4,7 @@ export type Project = {
   description: string;
   stack: string[];
   highlights: string[];
-  github?: string;
+  website?: string;
   demo?: string;
   note?: string;
   interactiveDemo?: boolean;
@@ -79,7 +79,7 @@ export const PROJECTS: Project[] = [
       "Integrated per-product WhatsApp deep links with prefilled inquiry messages on every catalog item.",
       "Applied semantic landmarks, an ARIA live result counter, and alt attributes on every image.",
     ],
-    demo: "https://sumbergrahamaju.vercel.app",
+    website: "https://sumbergrahamaju.vercel.app",
     note: "Custom domain pending",
   },
 ];
