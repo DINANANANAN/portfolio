@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
       "Integrated a knowledge bank using ChromaDB, PDF processing, embeddings, and AI-generated responses to answer product-related questions with reduced hallucination.",
       "Designed backend endpoints for receiving, processing, and responding to WhatsApp messages through Botika webhook integration.",
     ],
-    note: "Internal — guarded by NDA",
+    note: "Internal, guarded by NDA",
     interactiveDemo: true,
   },
   {
@@ -59,18 +59,27 @@ export const PROJECTS: Project[] = [
     demo: "https://ptera.id/id/",
   },
   {
-    slug: "athlete-tracking",
-    title: "Athlete Tracking Web App",
+    slug: "sumber-graha-maju",
+    title: "Sumber Graha Maju Website",
     description:
-      "A Laravel-based web application for managing athlete data, records, and tracking information.",
-    stack: ["Laravel 11", "MySQL", "PHP", "Forge", "DigitalOcean"],
-    highlights: [
-      "Built a database-driven web application for managing athlete-related records.",
-      "Implemented CRUD functionality using Laravel and MySQL.",
-      "Worked on the application deployment flow using Laravel Forge and DigitalOcean.",
-      "Structured backend logic to support data entry, retrieval, and management.",
-      "Debugged routing and deployment issues during development.",
+      "A static company website for a granite, ceramic, and sanitaryware retailer in Jakarta, with product catalogs and WhatsApp-based inquiries.",
+    stack: [
+      "HTML5",
+      "CSS",
+      "Vanilla JavaScript",
+      "Client-Side Search",
+      "WhatsApp Links",
+      "SEO",
+      "Vercel",
     ],
-    github: "https://github.com/FerdinanNathanael/webprog-athlete",
+    highlights: [
+      "Built a six-page static site using hand-written HTML, CSS, and vanilla JavaScript with no build step.",
+      "Developed two product sub-catalogs covering granite motifs and sanitaryware items.",
+      "Implemented client-side search, category and type filtering, and paginated browsing across the sanitaryware catalog.",
+      "Integrated per-product WhatsApp deep links with prefilled inquiry messages on every catalog item.",
+      "Applied semantic landmarks, an ARIA live result counter, and alt attributes on every image.",
+    ],
+    demo: "https://sumbergrahamaju.vercel.app",
+    note: "Custom domain pending",
   },
 ];
